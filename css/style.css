@@ -1,0 +1,193 @@
+/* created by Luigi Lauron */
+
+@import url('https://fonts.cdnfonts.com/css/snicker-snack');
+@import url('https://fonts.cdnfonts.com/css/santor');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    font-style: normal;
+    margin: 0;
+    padding: 0;    
+}
+
+h1 {
+    font-family: 'Snicker Snack', sans-serif;
+    margin-bottom: 10px;
+}
+
+header {
+    text-align: left;
+    padding: 1.5em;
+    background: #410C00;
+    color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+header img{
+    max-width: 150px;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background: #1a1a1a;
+    color: #fff;
+}
+
+.bg-white {
+    background-color: #ffffff;
+}
+
+main {
+    color: #410C00;
+}
+
+.intro {
+    background-color: #210082;
+}
+
+.intro p{
+    margin-bottom: 20px;
+}
+
+.intro figure {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.intro, .nutrition, .gallery {
+    padding: 50px 0;
+}
+
+.nutrition {
+    background-color: #410c00ab;
+    color: #ffffff;
+    font-family: 'Santor', sans-serif;
+}
+
+.nutrition:hover {
+    background-color: #410C00;
+}
+
+.nutrition ul li {
+    margin-bottom: 5px;
+}
+
+.nutrition ul {
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+.nutrition li:before {
+    content: "!";
+    font-size: 1.2em;
+    color: #ffffff;
+    margin-right: 10px;
+}
+
+.intro .border{
+    border: 1px solid rgba(87, 87, 87, 0.498);
+    border-radius: 5px;
+    padding: 2em;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.nutrition ul{
+    column-count: 2;
+    column-width: 300px;
+    column-gap: 20px;
+}
+
+.gallery {
+    background-color: #d0d5db;
+}
+
+.gallery .the_images {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.gallery .the_images figure{
+    border: 1px solid rgba(87, 87, 87, 0.218);
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px rgba(87, 87, 87, 0.498);
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5em;
+    min-height: 230px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+footer img {
+    max-width: 100px;
+    object-fit: contain;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.contact-form  {
+    width: 100%;
+    max-width: 400px;
+    margin: 25px auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    margin: 0.5em 0;
+    padding: 0.5em;
+}
+
+input:hover, textarea:hover {
+    border-color: #333;
+}
+
+.flex {
+    display: flex;
+}
+/* Additional styles for hover effects, SVGs, etc. */
+
+@media only screen and (max-width: 600px) {
+    .intro, .nutrition, .gallery {
+        padding: 0;
+    }
+    .intro .border{
+        border: 0;
+    }
+    .nutrition, .gallery {
+        padding: 2em; 
+    }
+    .gallery .the_images {
+        grid-template-columns: auto;
+    }    
+    .gallery .the_images figure{
+        padding: 0 1em;
+    }
+}
